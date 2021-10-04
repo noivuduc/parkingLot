@@ -61,6 +61,17 @@ You have to install JDK 11 in order to run the application
 
 ## Project Structure
 ![alt text](https://i.ibb.co/Cm0jNm0/Screenshot-2021-10-04-at-8-01-15-PM.png)
+
+## Assumptions
+- End time is always greater than Start Time.
+- The order of the vehicle enter/exit must be ordered by **timestamp**, that means from line 1 to line n, the timestamp must be strictly increase
+- There is only one entrance for exit and enter of this parkingLot.
+  - The input format must be:
+    - For entering: 
+    > Enter `<Vehicle type>` `<Vehicle number>` `<timestamp>`
+    - For Exit:
+    > Exit `<Vehicle number>` `<timestamp>`
+
 ## What I have done?
 - Read input from file, 
 - Base on the action(Enter/Exit), system will perform the respective operation.
